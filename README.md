@@ -12,4 +12,4 @@ A cute Running Cat animation on your MacBook menubar. Enjoy.
 If you set RunCat to accessibility in [Security & Privacy] of [System Preferences], the cat become able to run by key input.  
 システム環境設定のセキュリティとプライバシーでアクセシビリティに設定すると，キー入力でもアニメーションするようになります．
 
-![gif-anime](resources/accessibility.png =300x)
+![gif-anime](resources/accessibility.png)
