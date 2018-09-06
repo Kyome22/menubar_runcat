@@ -6,7 +6,7 @@ A cute Running Cat animation on your MacBook menubar. Enjoy.
 
 ![top](resources/runcat_top.jpg)
 
-![gif-anime](resources/runcat.gif)
+![gif-anime](resources/runcat.gif =300x)
 
 ***
 If you set RunCat to accessibility in [Security & Privacy] of [System Preferences], the cat become able to run by key input.  
