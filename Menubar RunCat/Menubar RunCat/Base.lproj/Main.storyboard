@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Menubar RunCat" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Menubar RunCat" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Menubar RunCat" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Quit Menubar RunCat" id="4sb-4s-VLi">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Menubar_RunCat" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menu" destination="p9w-zP-csW" id="lzr-DG-WJX"/>
+                    </connections>
+                </customObject>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <menu id="p9w-zP-csW">
+                    <items>
+                        <menuItem title="Show CPU Usage" id="igF-HN-MW8">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="toggleShowUsage:" target="Voe-Tx-rLC" id="udX-at-y7i"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="About Menubar RunCat" id="Brf-nN-lus">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="showAbout:" target="Voe-Tx-rLC" id="WRn-u0-7zp"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Quit" tag="1" id="SYX-4G-YIS">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="terminate:" target="Ady-hI-5gd" id="ewY-2s-NLb"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
