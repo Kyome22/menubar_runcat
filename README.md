@@ -20,7 +20,7 @@ This project is a reduced version of RunCat.app (App Store).
 
 # Demo
 
-![Demo](resources/runcat_demo.gif)
+![Demo](resources/demo.gif)
 
 # Contributors
 
