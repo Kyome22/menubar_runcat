@@ -40,13 +40,10 @@ public class CPU {
         loadPrevious = load
         
         let totalTicks = sysDiff + userDiff + idleDiff + niceDiff
-        let sys  = 100.0 * sysDiff / totalTicks
-        let user = 100.0 * userDiff / totalTicks
         
-        let value: Double = round((sys + user) * 10.0) / 10.0
+        let value: Double = round(1000.0 * (sysDiff + userDiff) / totalTicks) / 10.0
         let description: String = (value >= 100.0) ? "100↑%" : ((value < 10.0 ? " " : "") + String(value)) + "% "
         
         return (value, description)
     }
-    
 }
