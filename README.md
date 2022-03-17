@@ -24,6 +24,8 @@ This project is a reduced version of RunCat.app (App Store).
 
 # Contributors
 
-- [Kyome22](https://github.com/Kyome22)
+<a href="https://github.com/Kyome22/menubar_runcat/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Kyome22/menubar_runcat" />
+</a>
 
 <!-- CREATED_BY_LEADYOU_README_GENERATOR -->
