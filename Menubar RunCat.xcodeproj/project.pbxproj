@@ -3,21 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0ADF322A175F0B00867AB3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADF312A175F0B00867AB3 /* main.swift */; };
 		1CEF10A022F922DB00DAD355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF109F22F922DB00DAD355 /* AppDelegate.swift */; };
 		1CEF10A422F922DD00DAD355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEF10A322F922DD00DAD355 /* Assets.xcassets */; };
-		1CEF10A722F922DD00DAD355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CEF10A522F922DD00DAD355 /* Main.storyboard */; };
 		1CEF10B022F9342600DAD355 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF10AF22F9342600DAD355 /* CPU.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0ADF312A175F0B00867AB3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1CEF109C22F922DB00DAD355 /* Menubar RunCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menubar RunCat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEF109F22F922DB00DAD355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CEF10A322F922DD00DAD355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1CEF10A622F922DD00DAD355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CEF10A822F922DD00DAD355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CEF10A922F922DD00DAD355 /* Menubar_RunCat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Menubar_RunCat.entitlements; sourceTree = "<group>"; };
 		1CEF10AF22F9342600DAD355 /* CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
@@ -53,10 +53,10 @@
 		1CEF109E22F922DB00DAD355 /* Menubar RunCat */ = {
 			isa = PBXGroup;
 			children = (
+				1C0ADF312A175F0B00867AB3 /* main.swift */,
 				1CEF109F22F922DB00DAD355 /* AppDelegate.swift */,
 				1CEF10AF22F9342600DAD355 /* CPU.swift */,
 				1CEF10A322F922DD00DAD355 /* Assets.xcassets */,
-				1CEF10A522F922DD00DAD355 /* Main.storyboard */,
 				1CEF10A822F922DD00DAD355 /* Info.plist */,
 				1CEF10A922F922DD00DAD355 /* Menubar_RunCat.entitlements */,
 			);
@@ -89,8 +89,9 @@
 		1CEF109422F922DB00DAD355 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Takuto Nakamura";
 				TargetAttributes = {
 					1CEF109B22F922DB00DAD355 = {
@@ -99,7 +100,7 @@
 				};
 			};
 			buildConfigurationList = 1CEF109722F922DB00DAD355 /* Build configuration list for PBXProject "Menubar RunCat" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -122,7 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CEF10A422F922DD00DAD355 /* Assets.xcassets in Resources */,
-				1CEF10A722F922DD00DAD355 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,21 +135,11 @@
 			files = (
 				1CEF10B022F9342600DAD355 /* CPU.swift in Sources */,
 				1CEF10A022F922DB00DAD355 /* AppDelegate.swift in Sources */,
+				1C0ADF322A175F0B00867AB3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1CEF10A522F922DD00DAD355 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1CEF10A622F922DD00DAD355 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1CEF10AA22F922DD00DAD355 /* Debug */ = {
@@ -187,6 +177,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -204,7 +195,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,6 +240,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -260,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -275,15 +267,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Menubar RunCat/Menubar_RunCat.entitlements";
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Menubar RunCat/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2019 Takuto Nakamura. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.menubar-runcat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -296,15 +296,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Menubar RunCat/Menubar_RunCat.entitlements";
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Menubar RunCat/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2019 Takuto Nakamura. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.menubar-runcat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
